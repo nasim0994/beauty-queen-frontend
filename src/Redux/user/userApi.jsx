@@ -7,11 +7,13 @@ export const userApi = apiSlice.injectEndpoints({
       query: () => ({
         url: "/user/allUsers",
       }),
+      providesTags: ["users"],
     }),
     allCustomers: builder.query({
       query: () => ({
         url: "/user/allCustomers",
       }),
+      providesTags: ["users"],
     }),
     allAdministrator: builder.query({
       query: () => ({

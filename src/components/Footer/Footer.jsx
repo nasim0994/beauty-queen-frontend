@@ -1,4 +1,5 @@
 import { AiFillInstagram } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa6";
 import { BsFacebook, BsYoutube } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -9,15 +10,12 @@ import { useGetMainLogoQuery } from "../../Redux/logo/logoApi";
 export default function Footer() {
   const { data, isLoading } = useGetCategoriesQuery();
   const { data: contact, isLoading: contactLoading } = useGetContactQuery();
-  const { data: logo, isLoading: logoLoading } = useGetMainLogoQuery();
 
-  const fiveCategories = data?.data.slice(0,6)
+  const fiveCategories = data?.data.slice(0, 5);
 
-  if (isLoading || contactLoading || logoLoading) {
+  if (isLoading || contactLoading) {
     return null;
   }
-
-
 
   return (
     <footer className="pt-8 pb-4 bg-gray-50">
@@ -26,27 +24,19 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="w-max">
               <Link to="/">
-                <img
-                  src={
-                    logo?.data[0]?.logo === ""
-                      ? "/images/logo/logo.png"
-                      : `${import.meta.env.VITE_BACKEND_URL}/logo/${
-                          logo?.data[0]?.logo
-                        }`
-                  }
-                  className="w-36"
-                  alt="Logo"
-                />
+                <img src="/images/logo/logo.png" className="w-52" alt="Logo" />
               </Link>
             </div>
             <p className="text-neutral-content mt-1 font-medium">
               Your trusted online shop
             </p>
 
-            <div className="mt-2 text-sm text-neutral-content">
+            <div className="mt-1 text-sm text-neutral-content">
               <p>
-                We offer a variety of fashionable & branded sportswear,polo
-                shirt,t-shirt at a very reasonable price.
+                Elevate your style reign with Beauty Queen Online. Where
+                elegance meets convenience. Shop the finest trends, and reign
+                supreme in every outfit. Unleash your inner beauty, one click
+                away.
               </p>
             </div>
           </div>
@@ -119,7 +109,11 @@ export default function Footer() {
         <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700" />
 
         <div>
-          <img src="/images/sslcommerz-banner.png" alt="" className="md:w-full md:h-[130px]" />
+          <img
+            src="/images/sslcommerz-banner.png"
+            alt=""
+            className="md:w-full md:h-[130px]"
+          />
         </div>
 
         <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700" />
@@ -127,14 +121,15 @@ export default function Footer() {
         {/* bottom */}
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-[15px] text-neutral-content">
-            © 2024{" "}
-            <a
-              to="https://www.facebook.com/eManagerbd.xyz"
-              className="hover:underline"
+            © 2024 BeautyQueen. All Rights Reserved. Develop by{" "}
+            <Link
+              to="https://www.facebook.com/codertech.xyz"
+              target="_blank"
+              className="font-semibold"
             >
-              eshop
-            </a>
-            . All Rights Reserved.
+              CoderTech
+            </Link>
+            .
           </span>
           <ul className="flex items-center gap-2 text-neutral-content mt-3 sm:mt-0">
             <li>
@@ -151,12 +146,17 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link to={contact?.data[0]?.linkedinLink} target="_blank">
+                <FaLinkedin className="text-xl hover:-mt-2 duration-300" />
+              </Link>
+            </li>
+            <li>
               <Link to={contact?.data[0]?.instagramLink} target="_blank">
                 <AiFillInstagram className="text-xl hover:-mt-2 duration-300" />
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to={contact?.data[0]?.youtubeLink} target="_blank">
                 <BsYoutube className="text-xl hover:-mt-2 duration-300" />
               </Link>
             </li>

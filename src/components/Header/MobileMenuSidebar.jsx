@@ -43,6 +43,9 @@ export default function MobileMenuSidebar({ mobileMenu, setMobileMenu }) {
               <li>
                 <NavLink to="/about-us">About Us</NavLink>
               </li>
+              <li>
+                <NavLink to="/faq">FAQ</NavLink>
+              </li>
             </ul>
           )}
 

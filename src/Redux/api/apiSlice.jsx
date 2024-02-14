@@ -5,7 +5,7 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: import.meta.env.VITE_BACKEND_URL,
     prepareHeaders: async (headers) => {
-      const token = localStorage.getItem("eshop_jwt");
+      const token = localStorage.getItem("beautyqueen_jwt");
       if (token) {
         headers.set("Authorization", `bearer ${token}`);
       }
@@ -13,5 +13,5 @@ export const apiSlice = createApi({
     },
   }),
   endpoints: () => ({}),
-  tagTypes: ["product", "review"],
+  tagTypes: ["product", "review", "users"],
 });

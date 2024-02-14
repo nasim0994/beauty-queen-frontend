@@ -32,7 +32,7 @@ export default function Profile() {
     const requestOptions = {
       method: "PUT",
       headers: {
-        authorization: `bearer ${localStorage.getItem("eshop_jwt")}`,
+        authorization: `bearer ${localStorage.getItem("beautyqueen_jwt")}`,
       },
       body: formData,
     };

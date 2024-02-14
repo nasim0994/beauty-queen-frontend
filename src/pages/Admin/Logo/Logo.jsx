@@ -16,6 +16,8 @@ export default function Logo() {
   const [addLogo, { isLoading: addLoading, isSuccess, isError }] =
     useAddLogoMutation();
 
+  console.log(data?.data);
+
   const [
     updateMainLogo,
     {
@@ -29,6 +31,7 @@ export default function Logo() {
 
   const handleUpdateAddMainLogo = async () => {
     const logo = logos[0]?.file;
+    console.log(logo);
 
     if (!logo) {
       return Swal.fire("", "Logo is required", "error");
@@ -37,7 +40,7 @@ export default function Logo() {
     let formData = new FormData();
     formData.append("logo", logo);
 
-    if (data?.data?.length > 0 && data?.data[0]?.logo) {
+    if (data?.data?.length > 0) {
       await updateMainLogo({ id, formData });
     } else {
       await addLogo(formData);
@@ -57,6 +60,7 @@ export default function Logo() {
     // Add
     if (isSuccess) {
       Swal.fire("", "Logo successfully added", "success");
+      setLogos([]);
     }
     if (isError) {
       Swal.fire("", "Something went wrong when uploading", "error");

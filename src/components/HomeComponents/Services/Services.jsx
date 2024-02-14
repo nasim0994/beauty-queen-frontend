@@ -22,7 +22,7 @@ const Services = () => {
 
           <div className="border border-neutral/40 rounded p-4 flex gap-4 justify-center items-center">
             <div>
-              <MdVerified className="text-3xl  text-secondary" />
+              <MdVerified className="text-3xl text-neutral" />
             </div>
             <div>
               <h6 className="sm:text-lg">100% Authentic Product</h6>

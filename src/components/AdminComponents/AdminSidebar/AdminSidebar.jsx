@@ -107,8 +107,29 @@ const adminSidebarItems = [
     title: "Front-End Setting",
     subMenu: [
       {
-        title: "Logo",
-        path: "/admin/front-end/logo",
+        title: "Business Setup",
+        subSubMenu: [
+          {
+            title: "Logo",
+            path: "/admin/front-end/logo",
+          },
+          {
+            title: "Favicon",
+            path: "/admin/front-end/business/favicon",
+          },
+          {
+            title: "Business Info",
+            path: "/admin/front-end/business/business-info",
+          },
+          {
+            title: "About Us",
+            path: "/admin/front-end/about-us",
+          },
+          {
+            title: "Contact Us",
+            path: "/admin/front-end/contact-us",
+          },
+        ],
       },
       {
         title: "Banner",
@@ -117,14 +138,6 @@ const adminSidebarItems = [
       {
         title: "Campaign Banner",
         path: "/admin/front-end/campaign-banner",
-      },
-      {
-        title: "About Us",
-        path: "/admin/front-end/about-us",
-      },
-      {
-        title: "Contact Us",
-        path: "/admin/front-end/contact-us",
       },
     ],
   },
@@ -160,8 +173,12 @@ export default function AdminSidebar() {
 
       <div className="bg-[#445360] p-2 flex justify-between items-center font-light">
         <p>Visit Front-End</p>
-        <Link to="/" className="text-primary hover:underline">
-          Eshop
+        <Link
+          to="/"
+          target="_blank"
+          className="text-orange-400 hover:underline"
+        >
+          beautyqueen
         </Link>
       </div>
     </div>

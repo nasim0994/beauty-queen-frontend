@@ -47,20 +47,14 @@ const MainHeader = () => {
           <div>
             <Link to="/">
               <img
-                src={
-                  logo?.data[0]?.logo === ""
-                    ? "/images/logo/logo.png"
-                    : `${import.meta.env.VITE_BACKEND_URL}/logo/${
-                        logo?.data[0]?.logo
-                      }`
-                }
+                src="/images/logo/logo.png"
                 alt=""
-                className="w-20 sm:w-32 h-14"
+                className="w-40 sm:w-48"
               />
             </Link>
           </div>
 
-          <div className="hidden lg:block w-1/2 xl:w-3/5">
+          <div className="hidden lg:block w-1/2">
             <SearchBox />
           </div>
 

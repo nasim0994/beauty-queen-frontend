@@ -1,6 +1,6 @@
 {
-  "name": "single-vendor",
-  "homepage": "https://single-vendor.emanagerit.com",
+  "name": "beautyqueen",
+  "homepage": "",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -18,6 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropdown-select": "^4.11.0",
+    "react-favicon": "^2.0.3",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.11.0",
     "react-images-uploading": "^3.1.7",
     "react-jwt": "^1.2.0",

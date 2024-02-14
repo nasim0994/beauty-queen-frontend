@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #c91e6d;
+  --secondary-color: #f2accc;
+  --accent-color: #031a2f;
+  --neutral-color: #3d3d3f;
+  --neutralContent-color: #636363;
+  --base-100: #fff;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -24,7 +33,7 @@ h2 {
 }
 
 .active {
-  color: #f47c20;
+  color: var(--primary-color);
 }
 
 .shadow {
@@ -35,16 +44,16 @@ h2 {
 }
 
 .primary_btn {
-  background: #f47c20;
+  background: var(--primary-color);
   color: #fff;
   padding: 7px 20px;
   border-radius: 4px;
-  border: 1px solid #f47c20;
+  border: 1px solid var(--primary-color);
   font-size: 15px;
   transition: all 0.3s ease;
 }
 .primary_btn:hover {
-  color: #f47c20;
+  color: var(--primary-color);
   background: transparent;
 }
 
@@ -157,7 +166,7 @@ h2 {
 }
 .shop_categories ul li a:hover {
   background: #dddddd32;
-  color: #f47c20;
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -395,9 +404,9 @@ table tbody td {
 }
 
 .pagination-container button.active {
-  background: #f47c20;
+  background: var(--primary-color);
   color: #fff;
-  border-color: 1px solid #f47c20;
+  border-color: 1px solid var(--primary-color);
 }
 
 @media only screen and (max-width: 640px) {
