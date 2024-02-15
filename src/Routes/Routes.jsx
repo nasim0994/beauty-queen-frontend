@@ -61,7 +61,7 @@ import EditBrand from "../pages/Admin/Brand/EditBrand";
 import CouponLists from "../pages/Admin/EcommerceSetting/Coupon/CouponLists";
 import AddCoupon from "../pages/Admin/EcommerceSetting/Coupon/AddCoupon";
 import EditCoupon from "../pages/Admin/EcommerceSetting/Coupon/EditCoupon";
-import AllUsers from "../pages/Admin/User/AllUsers";
+import AllCustomers from "../pages/Admin/User/AllCustomers";
 
 export const routes = createBrowserRouter([
   {
@@ -254,7 +254,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/admin/customer/all-customers",
-        element: <AllUsers />,
+        element: <AllCustomers />,
       },
       {
         path: "/admin/front-end/logo",
