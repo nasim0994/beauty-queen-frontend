@@ -38,6 +38,7 @@ import EditProduct from "../pages/Admin/Product/EditProduct";
 import MyReviews from "../pages/Account/Reviews/MyReviews";
 import AddCategory from "../pages/Admin/Category/Categories/AddCategory";
 import AllCategories from "../pages/Admin/Category/Categories/AllCategories";
+// import EditCategory from "../pages/Admin/Category/Categories/EditCategory";
 import EditCategory from "../pages/Admin/Category/Categories/EditCategory";
 import AddSubCategory from "../pages/Admin/Category/SubCategories/AddSubCategory";
 import AllSubCategories from "../pages/Admin/Category/SubCategories/AllSubCategories";
