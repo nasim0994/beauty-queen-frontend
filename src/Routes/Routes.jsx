@@ -34,7 +34,6 @@ import Logo from "../pages/Admin/Logo/Logo";
 import AllOrders from "../pages/Admin/Order/AllOrders";
 import OrderDetails from "../pages/Admin/Order/OrderDetails";
 import EditProduct from "../pages/Admin/Product/EditProduct";
-import AllUsers from "../pages/Admin/user/AllUsers";
 
 import MyReviews from "../pages/Account/Reviews/MyReviews";
 import AddCategory from "../pages/Admin/Category/Categories/AddCategory";
@@ -62,6 +61,7 @@ import EditBrand from "../pages/Admin/Brand/EditBrand";
 import CouponLists from "../pages/Admin/EcommerceSetting/Coupon/CouponLists";
 import AddCoupon from "../pages/Admin/EcommerceSetting/Coupon/AddCoupon";
 import EditCoupon from "../pages/Admin/EcommerceSetting/Coupon/EditCoupon";
+import AllUsers from "../pages/Admin/User/AllUsers";
 
 export const routes = createBrowserRouter([
   {
