@@ -39,7 +39,7 @@ import MyReviews from "../pages/Account/Reviews/MyReviews";
 
 import AllCategories from "../pages/Admin/Category/Categories/AllCategories";
 import AddCategory from "../pages/Admin/Category/Categories/AddCategory";
-import EditCategor from "../pages/Admin/Category/Categories/EditCategor";
+import EditCategory from "../pages/Admin/Category/Categories/EditCategory";
 
 import AddSubCategory from "../pages/Admin/Category/SubCategories/AddSubCategory";
 import AllSubCategories from "../pages/Admin/Category/SubCategories/AllSubCategories";
@@ -197,7 +197,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/admin/category/edit/:id",
-        element: <EditCategor />,
+        element: <EditCategory />,
       },
       {
         path: "/admin/category/sub-categories",
