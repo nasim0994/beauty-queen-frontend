@@ -1,5 +1,5 @@
 import CampaignBanner from "../../components/HomeComponents/CampaignBanner/CampaignBanner";
-import CategoryWaysProducts from "../../components/HomeComponents/CategoryWaysProducts/CategoryWaysProducts";
+// import CategoryWaysProducts from "../../components/HomeComponents/CategoryWaysProducts/CategoryWaysProducts";
 import ChooseByCategory from "../../components/HomeComponents/ChooseByCategory/ChooseByCategory";
 import FeaturedProducts from "../../components/HomeComponents/FeaturedProducts/FeaturedProducts";
 import Hero from "../../components/HomeComponents/Hero/Hero";
@@ -17,7 +17,7 @@ export default function Home() {
       <ChooseByCategory />
       <CampaignBanner />
       <PopularProducts />
-      <CategoryWaysProducts />
+      {/* <CategoryWaysProducts /> */}
       <Services />
     </>
   );
