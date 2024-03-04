@@ -1,6 +1,6 @@
 import { useGetCategoriesQuery } from "../../../Redux/category/categoryApi";
 import CWP from "../../Skeleton/CWP/CWP";
-import ProductsSection from "../productsSection/productsSection";
+import ProductSection from "../ProductSection/ProductSection";
 
 export default function CategoryWaysProducts() {
   const {
@@ -20,7 +20,7 @@ export default function CategoryWaysProducts() {
   }
   if (!isLoading && !isError && categories?.data?.length > 0) {
     content = categories?.data?.map((category) => (
-      <ProductsSection key={category?._id} category={category} />
+      <ProductSection key={category?._id} category={category} />
     ));
   }
 
