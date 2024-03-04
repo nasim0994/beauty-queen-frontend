@@ -9,7 +9,7 @@ import {
 import { useNavigate, useParams } from "react-router-dom";
 import Spinner from "../../../../components/Spinner/Spinner";
 
-export default function EditCategory() {
+export default function EditCategor() {
   const { id } = useParams();
   const { data, isLoading } = useGetCategoryQuery(id);
   const category = data?.data;
