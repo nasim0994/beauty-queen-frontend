@@ -36,10 +36,11 @@ import OrderDetails from "../pages/Admin/Order/OrderDetails";
 import EditProduct from "../pages/Admin/Product/EditProduct";
 
 import MyReviews from "../pages/Account/Reviews/MyReviews";
-import AddCategory from "../pages/Admin/Category/Categories/AddCategory";
+
 import AllCategories from "../pages/Admin/Category/Categories/AllCategories";
+import AddCategory from "../pages/Admin/Category/Categories/AddCategory";
 // import EditCategory from "../pages/Admin/Category/Categories/EditCategory";
-import EditCategory from "../pages/Admin/Category/Categories/EditCategory";
+
 import AddSubCategory from "../pages/Admin/Category/SubCategories/AddSubCategory";
 import AllSubCategories from "../pages/Admin/Category/SubCategories/AllSubCategories";
 import EditSubCategory from "../pages/Admin/Category/SubCategories/EditSubCategory";
@@ -193,10 +194,10 @@ export const routes = createBrowserRouter([
         path: "/admin/category/add-category",
         element: <AddCategory />,
       },
-      {
-        path: "/admin/category/edit/:id",
-        element: <EditCategory />,
-      },
+      // {
+      //   path: "/admin/category/edit/:id",
+      //   element: <EditCategory />,
+      // },
       {
         path: "/admin/category/sub-categories",
         element: <AllSubCategories />,
