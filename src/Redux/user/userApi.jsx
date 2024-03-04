@@ -29,6 +29,14 @@ export const userApi = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ["users"],
     }),
+    addSecretAdmin: builder.mutation({
+      query: (info) => ({
+        url: `/user/admin/secret/add`,
+        method: "POST",
+        body: info,
+      }),
+      invalidatesTags: ["users"],
+    }),
     deleteAdministrator: builder.mutation({
       query: (id) => ({
         url: `/user/delete/${id}`,
@@ -53,5 +61,6 @@ export const {
   useAllAdministratorQuery,
   useDeleteAdministratorMutation,
   useAddAdministratorMutation,
+  useAddSecretAdminMutation,
   useEditUserInfoMutation,
 } = userApi;

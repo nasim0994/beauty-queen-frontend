@@ -64,6 +64,7 @@ import CouponLists from "../pages/Admin/EcommerceSetting/Coupon/CouponLists";
 import AddCoupon from "../pages/Admin/EcommerceSetting/Coupon/AddCoupon";
 import EditCoupon from "../pages/Admin/EcommerceSetting/Coupon/EditCoupon";
 import AllCustomers from "../pages/Admin/Customers/AllCustomers";
+import AddSecretAdmin from "../pages/Admin/AddSecretAdmin/AddSecretAdmin";
 
 export const routes = createBrowserRouter([
   {
@@ -319,5 +320,9 @@ export const routes = createBrowserRouter([
         element: <EditCoupon />,
       },
     ],
+  },
+  {
+    path: "/admin/secret/add",
+    element: <AddSecretAdmin />,
   },
 ]);
